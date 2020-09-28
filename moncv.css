@@ -1,0 +1,66 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	line-height: 1.8;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-display: block;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header,
+.content,
+.sidebar,
+.footer {
+	text-align: center;
+	color: blanchedalmond;
+	box-sizing: border-box;
+	padding: 20px 34px;
+}
+
+.header {
+	background-color: rgb(0, 140, 255);
+	flex-basis: 100%;
+}
+
+.content {
+	background-color: rgb(216, 37, 46);
+	flex-basis: 50%;
+}
+
+.sidebar {
+	background-color: purple;
+	flex-basis: 25%;
+	display: grid;
+}
+
+.footer {
+	background-color: rgb(0, 140, 255);
+	flex-basis: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+	.content {
+		flex-basis: 100%;
+		order: 1;
+	}
+	.sidebar {
+		flex-basis: 50%;
+	}
+	.footer {
+		order: 2;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.sidebar {
+		flex-basis: 100%;
+	}
+	.progress {
+		margin: 10px;
+	}
+}
