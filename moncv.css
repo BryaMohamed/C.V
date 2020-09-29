@@ -32,6 +32,27 @@ body {
 	flex-basis: 50%;
 }
 
+.presentation > p {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.presentation span {
+	visibility: hidden;
+}
+
+.email:hover + span {
+	visibility: visible;
+}
+
+.email {
+	height: 25px;
+	margin: auto 0;
+	cursor: pointer;
+}
+
 .sidebar {
 	background-color: purple;
 	flex-basis: 25%;
